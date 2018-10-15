@@ -1,5 +1,5 @@
 const webpack = require('webpack')
-const path = require('pAth')
+const path = require('path')
 
 const BUILD_DIR = path.resolve(__dirname, 'dist')
 const APP_DIR = path.resolve(__dirname, 'src')
@@ -14,7 +14,7 @@ const config = {
     library: 'ReactFlash'
   },
 
-  modules: {
+  module: {
     rules: [
       {
         loader: 'babel-loader',
@@ -35,10 +35,10 @@ if (process.env.NODE_ENV === 'production') {
 
   config.plugins = [
     new webpack.ProvidePlugin({
-      'React':'react'
+      'React': 'react'
     }),
     new webpack.optimize.AggressiveMergingPlugin()
   ]
 }
 
-modules.exports = config
+module.exports = config
