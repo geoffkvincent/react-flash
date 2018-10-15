@@ -11,9 +11,13 @@
   "author": "gkvincent",
   "license": "MIT",
   "devDependencies": {
+    "babel-loader": "^8.0.4",
     "components": "^0.1.0",
+    "cross-env": "^5.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "styled": "^1.0.0"
+    "styled": "^1.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
